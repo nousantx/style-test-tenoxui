@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid System | TenoxUI</title>
+    <script src="../node_modules/@nousantx/tenoxui-styler/dist/index.umd.js"></script>
+
+    <script src="./index.js"></script>
+    <script src="../_init/index.js"></script>
+  </head>
+  <body
+    class="[font-family]-sans-serif p-2rem [display]-flex [gap]-1rem [flex-wrap]-wrap"
+    child="(section): [width]-100%; (section > div > div): p-2rem br-1rem [text-align]-center;"
+  >
+    <div class="box-200px max-md:[background]-red md:[background]-blue"></div>
+
+    <section>
+      <div class="grid grid-cols-3 [gap]-1rem">
+        <div class="bg-blue-200">1</div>
+        <div class="bg-blue-300">2</div>
+        <div class="bg-blue-400">3</div>
+        <div class="bg-blue-500">4</div>
+        <div class="bg-blue-600">5</div>
+        <div class="bg-blue-700">6</div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="grid grid-t-col-[repeat(2,minmax(0,1fr))] max-md:grid-t-col-[repeat(2,minmax(0,1fr))] md:grid-t-col-[repeat(3,minmax(0,1fr))] lg:grid-t-col-[repeat(4,minmax(0,1fr))] [gap]-1rem"
+      >
+        <div class="bg-green-200 hover:bg-blue-500 tr-500ms">1</div>
+        <div class="bg-green-300">2</div>
+        <div class="bg-green-400">3</div>
+        <div class="bg-green-500">4</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid grid-cols-3 [gap]-1rem">
+        <div class="bg-red-200">1</div>
+        <div class="bg-red-300 col-span-2">2 (spans 2 columns)</div>
+        <div class="bg-red-400 col-span-3">3 (spans all 3 columns)</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid grid-cols-3 grid-rows-2 [gap]-1rem h-64">
+        <div class="bg-purple-200">1</div>
+        <div class="bg-purple-300 row-span-2">2 (spans 2 rows)</div>
+        <div class="bg-purple-400">3</div>
+        <div class="bg-purple-500">4</div>
+        <div class="bg-purple-600">5</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid grid-t-col-[repeat(auto-fit,minmax(250px,1fr))] [gap]-1rem">
+        <div class="bg-yellow-200">1</div>
+        <div class="bg-yellow-300">2</div>
+        <div class="bg-yellow-400">3</div>
+        <div class="bg-yellow-500">4</div>
+        <div class="bg-yellow-600">5</div>
+      </div>
+    </section>
+
+    <script>
+      __nsx_styler.init(useConfig({ property, aliases }))
+    </script>
+  </body>
+</html>

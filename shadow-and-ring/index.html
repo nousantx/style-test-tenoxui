@@ -1,0 +1,48 @@
+<!doctype html>
+<html
+  lang="en"
+  class="[--ring-offset]-[0_0_0_0_transparent] [--ring-offset-width]-0px [--ring-color]-[0_0_0] [--ring-offset-color]-[0_0_0]"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ring & Shadow | TenoxUI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@nousantx/tenoxui-styler"></script>
+
+    <script src="./index.js"></script>
+    <script src="../_init/index.js"></script>
+  </head>
+  <body
+    class="[font-family]-sans-serif p-2rem [display]-flex [gap]-1rem [flex-wrap]-wrap"
+    child="(div): 
+      box-100px 
+      br-1rem 
+      tr-300ms 
+      [shadow,ring]-primary-500
+      hover:[shadow,ring]-red-500
+      [display]-flex 
+      [align-items,justify-content]-center 
+      [font-size]-12px
+    ;"
+  >
+    <div class="shadow-sm">shadow-sm</div>
+    <div class="shadow">shadow</div>
+    <div class="shadow-md">shadow-md</div>
+    <div class="shadow-lg">shadow-lg</div>
+    <div class="shadow-xl">shadow-xl</div>
+    <div class="shadow-2xl">shadow-2xl</div>
+    <div class="shadow-inner">shadow-inner</div>
+
+    <div class="ring-0">ring-0</div>
+    <div class="ring-1">ring-1</div>
+    <div class="ring-2">ring-2</div>
+    <div class="ring">ring</div>
+    <div class="ring-4">ring-4</div>
+    <div class="ring-8">ring-8</div>
+
+    <script>
+      __nsx_styler.init(useConfig({ property, classes }))
+    </script>
+  </body>
+</html>
