@@ -1,0 +1,16 @@
+{
+  "name": "@nousantx/tenoxui-extended",
+  "version": "1.0.0",
+  "description": "Extended styles of tenoxui, re-create various things with tenoxui",
+  "author": "NOuSantx <nousantx@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "echo 'hello world'"
+  },
+  "devDependencies": {
+    "@nousantx/tenoxui-styler": "^0.1.7",
+    "@tenoxui/core": "^1.3.1",
+    "@tenoxui/property": "^1.4.5"
+  }
+}
